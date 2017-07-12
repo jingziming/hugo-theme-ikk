@@ -1,0 +1,16 @@
+<!-- pagination -->
+<div class="archive-pagination">
+    <div class="paginator">
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+
+        {{if $paginator.HasPrev }}
+            {{ $prevUrl := delimit (slice .site.BaseURL .paginator.Prev.URL) "" }}
+            <a class="extend prev" rel="prev" href="{{ $prevUrl }}">«</a>
+        {{ end }}
+
+        {{if $paginator.HasNext }}
+            {{ $nextUrl := delimit (slice .site.BaseURL .paginator.Next.URL) "" }}
+            <a class="extend next" rel="next" href="{{ $nextUrl }}">»</a>
+        {{ end }}
+    </div>
+</div>

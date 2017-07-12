@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ block "title" . }}{{ end }}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    {{ block "head" . }}{{ end }}
+    {{ block "styles" . }}{{ end }}
+    {{ block "before_script" . }}{{ end }}
+</head>
+<body>
+    {{ block "container" . }}
+        <div class="container">
+        <!-- header -->
+        {{ block "header" . }} 
+            {{ partial "header.html" . }} 
+        {{ end }}
+        
+        <!-- navs -->
+        {{ block "navs" . }} 
+            {{ partial "navs.html" . }} 
+        {{ end }}
+
+        <div class="block-body">
+        {{ block "block-body" . }}
+        {{ end }}
+        </div>
+
+        <div class="block-sidebar">
+        {{ block "block-sidebar" . }}
+            {{ partial "sidebar.html" . }} 
+        {{ end }}
+        </div>
+
+        <!-- footer -->
+        {{ block "footer" . }} 
+            {{ partial "footer.html" . }} 
+        {{ end }}
+        </div>
+    {{ end }}
+</body>
+{{ block "after_script" . }}{{ end }}
+</html>

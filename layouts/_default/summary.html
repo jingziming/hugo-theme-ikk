@@ -1,0 +1,10 @@
+<div class="content-item">
+    <div class="content-item-title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+    <div class="content-item-meta"></div>
+    <div class="content-item-body">
+        {{ .Summary }}
+    </div>
+    {{ if .Truncated }}
+    <div class="content-item-more"><a href="{{ .Permalink }}">Read More</a>&nbsp;</div>
+    {{ end }}
+</div>
