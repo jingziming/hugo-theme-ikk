@@ -294,22 +294,18 @@ body {
             margin: 10px 10px 20px;
             padding: 15px 20px;
 
-
             .paginator {
                 margin: 0 auto;
                 width: 100%;
                 display: inline-block;
-                padding: 0 1em;
                 text-align: center;
                 font-size: 16px;
 
-                .prev {
-                    width: 49%;
+                .newer {
                     float: left;
                 }
 
-                .next {
-                    width: 49%;
+                .older {
                     float: right;
                 }
             }

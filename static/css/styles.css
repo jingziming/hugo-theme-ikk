@@ -198,14 +198,11 @@ body {
         margin: 0 auto;
         width: 100%;
         display: inline-block;
-        padding: 0 1em;
         text-align: center;
         font-size: 16px; }
-        .container .block-body .archive-pagination .paginator .prev {
-          width: 49%;
+        .container .block-body .archive-pagination .paginator .newer {
           float: left; }
-        .container .block-body .archive-pagination .paginator .next {
-          width: 49%;
+        .container .block-body .archive-pagination .paginator .older {
           float: right; }
   .container .block-sidebar {
     width: 25%;
