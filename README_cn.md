@@ -1,13 +1,8 @@
 # Ikk
 
-Theme based from Hexo [SimpleBlock](https://github.com/jysperm/hexo-theme-simpleblock) by [jysperm](https://github.com/jysperm).
+简约纯粹的中文技术博客风格，基于 Hexo [SimpleBlock](https://github.com/jysperm/hexo-theme-simpleblock) 主题迁移而来
 
-## Document
-
-* [English](https://github.com/jingziming/hugo-theme-ikk/blob/master/README.md)
-* [中文](https://github.com/jingziming/hugo-theme-ikk/blob/master/README_cn.md)
-
-## Preview
+## 预览
 
 [Live](http://jingziming.com)
 
@@ -37,11 +32,16 @@ paginatePath = "page"
     url = "/getting-started"
 ```
 
-## Timeline
+## 时间线
 
-* release the v1.0.0 version on 07 2017, 13
+* 2017年07月13日 发布 v1.0.0 版本
 
-More please check [ChangeLog](https://github.com/jingziming/hugo-theme-ikk/blob/master/changelog.md)
+详细更新日志请查看 [ChangeLog](https://github.com/jingziming/hugo-theme-ikk/blob/master/changelog.md)
 
-## Development
+## 开发
+
+暂无
+
+
+
 
