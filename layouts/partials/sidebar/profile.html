@@ -1,11 +1,8 @@
 <div class="widget sidebar profile">
     <h2>个人简介</h2>
     <ul>
-        <li>有一个 <a href="https://jybox.net">精子粉丝团</a></li>
-        <li><a href="http://pidan.cat">皮蛋</a> 和 <a href="http://doufu.cat">豆腐</a> 的主人</li>
-        <li>创建了 <a href="https://atom-china.org">Atom 中文社区</a></li>
-        <li>坚持十余年的 <a href="https://jysperm.me">独立博客</a> 作者</li>
-        <li>高中退学，就职于 <a href="https://leancloud.cn">LeanCloud</a></li>
-        <li>在 <a href="https://github.com/jysperm">Github</a> 上积极参与开源社区</li>
+        {{ range .Site.Author.profile }}
+            {{ . | markdownify }}
+        {{ end }}
     </ul>
 </div>

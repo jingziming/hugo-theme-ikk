@@ -1,3 +1,4 @@
+{{ if gt .TotalPages .PageSize }}
 <!-- pagination -->
 <div class="archive-pagination">
     <div class="paginator">
@@ -9,3 +10,4 @@
         {{ end }}
     </div>
 </div>
+{{ end }}

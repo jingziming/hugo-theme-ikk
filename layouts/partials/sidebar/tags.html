@@ -2,7 +2,7 @@
     <ul>
         {{if .Site.Taxonomies.tags }}
             {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-                <li class="tag-list-item"><a class="tag-list-link" href='{{ "/tags/" | relLangURL }}{{ $name | urlize }}/'>{{ $name }}</a></li>
+                <li><a href='{{ "/tags/" | relLangURL }}{{ $name | urlize }}/'>{{ $name }}</a></li>
             {{ end }}
         {{ end }}
     </ul>

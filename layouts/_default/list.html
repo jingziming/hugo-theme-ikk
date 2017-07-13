@@ -1,0 +1,12 @@
+{{ define "title" }}Tag: {{ .Title }} | {{ .Site.Title }}{{ end }}
+
+{{ define "block-body" }}
+<div class="archive-meta"><strong>标签</strong> {{ .Title }}</div>
+<div class="archive-content">
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+    {{ range $index, $page := $paginator.Pages }}
+        {{ .Render "summary" }}
+    {{ end }}
+</div>
+{{ partial "pagination.html" $paginator }}
+{{ end }}
