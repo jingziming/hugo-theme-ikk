@@ -9,8 +9,6 @@
 ## Config.toml
 
 ```
-baseURL = "http://jingziming/"
-languageCode = "en-us"
 title = "荆子明's Blog"
 theme = "hugo-theme-ikk"
 
@@ -18,10 +16,10 @@ paginate = 10
 paginatePath = "page"
 
 [author]
-    github = "https://github.com/jingziming"
+    github = ""
     profile = [
-        "* 有一个 [精子粉丝团](https://jingziming.com)",
-        "* [皮蛋](#) 和 [豆腐](#) 的主人"
+        "* profile line",
+        "* profile line"
     ]
 
 [[menu.main]]
