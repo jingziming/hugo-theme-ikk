@@ -43,3 +43,12 @@ More please check [ChangeLog](https://github.com/jingziming/hugo-theme-ikk/blob/
 
 ## Development
 
+* Install devDependencies
+* Execute the Grunt command
+
+Example:
+
+```
+    npm install
+    grunt
+```

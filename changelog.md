@@ -2,3 +2,4 @@
 
 ## Release 1.0.0
     * 迁移 simpleblock 主题
+    * 添加 Grunt 自动化工具

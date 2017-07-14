@@ -38,7 +38,16 @@ paginatePath = "page"
 
 ## 开发
 
-暂无
+* 安装 devDependencies
+* 执行 Grunt 工具
+
+
+示例:
+
+```
+    npm install
+    grunt
+```
 
 
 
