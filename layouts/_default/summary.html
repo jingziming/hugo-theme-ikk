@@ -1,6 +1,15 @@
 <div class="content-item">
     <div class="content-item-title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
-    <div class="content-item-meta"></div>
+    <div class="content-item-meta">
+        <div class="content-item-meta-date">
+            <time>{{ .Date.Format "2006 年 01 月 02 号" }}</time>
+        </div>
+        <div class="content-item-meta-tags">
+            {{ range .Params.Tags }}
+                <a href="/tags/{{ . | urlize }}">{{ . }}</a> 
+            {{ end }}
+        </div>
+    </div>
     <div class="content-item-body">
         {{ .Summary }}
     </div>

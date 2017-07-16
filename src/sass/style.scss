@@ -143,18 +143,37 @@ body {
         .archive-content {
             .content-item {
                 @extend .block-common;
+                font-family: Georgia,'Source Han Sans CN','Xin Gothic','Hiragino Sans GB','Microsoft YaHei',sans-serif;
 
                 .content-item-title {
                     font-size: 30px;
                     font-weight: 500;
                     line-height: 1.1;
-                    border-bottom: 1px solid #DDD;
-                    padding-bottom: 15px;
-                    margin-bottom: 20px;
                 }
-                .content-item-meta {}
+
+                .content-item-meta {
+                    display: block;
+                    padding-bottom: 10px;
+                    margin: 10px 0 20px 0;
+                    border-bottom: 1px solid #DDD;
+                    height: 20px;
+                    
+                    .content-item-meta-date {
+                        float: left;
+                        color: #999999;
+                    }
+
+                    .content-item-meta-tags {
+                        float: right;
+                        margin: 0 .2em;
+
+                        a {
+                            color: #4078c0;
+                        }
+                    }
+                }
+
                 .content-item-body {
-                    font-family: Georgia,'Source Han Sans CN','Xin Gothic','Hiragino Sans GB','Microsoft YaHei',sans-serif;
                     overflow: hidden;
                     font-size: 16px;
                     line-height: 1.6;
