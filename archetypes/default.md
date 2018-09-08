@@ -2,7 +2,7 @@
 title = "Post title"
 description = ""
 author = ""
-date = ""
+date = "{{ .Date }}"
 slug = "post-title"
 tags = []
 draft = false

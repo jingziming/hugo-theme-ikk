@@ -4,7 +4,7 @@
 <div class="archive-meta"><strong>标签</strong> {{ .Title }}</div>
 <div class="archive-content">
     {{ $paginator := .Paginate (where .Data.Pages "Type" "archives") }}
-    {{ range $index, $page := $paginator.Pages.ByDate }}
+    {{ range $index, $page := $paginator.Pages.ByPublishDate }}
     {{ .Render "summary" }}
     {{ end }}
 </div>
