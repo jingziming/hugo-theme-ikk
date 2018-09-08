@@ -2,8 +2,8 @@
 
 {{ define "block-body" }}
 <div class="archive-content">
-    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-    {{ range $index, $page := $paginator.Pages }}
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "archives") }}
+    {{ range $index, $page := $paginator.Pages.ByDate }}
         {{ .Render "summary" }}
     {{ end }}
 </div>

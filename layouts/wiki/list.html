@@ -1,9 +1,8 @@
-{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+{{ define "title" }}Wikis | {{ .Site.Title }}{{ end }}
 
 {{ define "block-body" }}
-<div class="archive-meta"><strong>标签</strong> {{ .Title }}</div>
 <div class="archive-content">
-    {{ $paginator := .Paginate (where .Data.Pages "Type" "archives") }}
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "wiki") }}
     {{ range $index, $page := $paginator.Pages.ByDate }}
     {{ .Render "summary" }}
     {{ end }}
