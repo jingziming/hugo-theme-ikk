@@ -1,15 +1,10 @@
-# Ikk
+# hugo-theme-ikk
 
 Theme based from Hexo [SimpleBlock](https://github.com/jysperm/hexo-theme-simpleblock) by [jysperm](https://github.com/jysperm).
 
-## Document
-
-* [English](https://github.com/jingziming/hugo-theme-ikk/blob/master/README.md)
-* [中文](https://github.com/jingziming/hugo-theme-ikk/blob/master/README_cn.md)
-
-## Preview
-
-[Live](http://jingziming.com)
+[![website](https://img.shields.io/badge/website-preview-green.svg)](http://jingziming.com/)
+![Release](https://img.shields.io/github/release/jingziming/hugo-theme-ikk.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## Config.toml
 
@@ -35,20 +30,7 @@ paginatePath = "page"
     url = "/getting-started"
 ```
 
-## Timeline
-
-* release the v1.0.0 version on 07 2017, 13
-
-More please check [ChangeLog](https://github.com/jingziming/hugo-theme-ikk/blob/master/changelog.md)
-
 ## Development
 
 * Install devDependencies
 * Execute the Grunt command
-
-Example:
-
-```
-    npm install
-    grunt
-```
