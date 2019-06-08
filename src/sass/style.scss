@@ -244,7 +244,7 @@ body {
                         width: 100%;
                     }
 
-                    table {
+                    > table {
                         display: block;
                         width: 100%;
                         overflow: auto;
@@ -287,7 +287,6 @@ body {
                         overflow: auto;
                         font-size: 85%;
                         line-height: 1.45;
-                        background-color: #f7f7f7;
                         border-radius: 3px;
 
                         code {
@@ -328,8 +327,9 @@ body {
                     }
 
                     pre:first-child{
-                        padding-top: 15px;
-                        margin-top: 10px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        margin-bottom: 0px;
                     }
                     
                 }
@@ -361,6 +361,13 @@ body {
                     float: right;
                 }
             }
+        }
+
+        .archive-content-empty {
+            min-height: 400px;
+            text-align: center;
+            line-height: 400px;
+            color: #777;
         }
     }
 

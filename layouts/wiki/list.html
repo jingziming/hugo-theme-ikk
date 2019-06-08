@@ -1,11 +1,15 @@
 {{ define "title" }}Wikis | {{ .Site.Title }}{{ end }}
 
 {{ define "block-body" }}
-<div class="archive-content">
-    {{ $paginator := .Paginate (where .Data.Pages "Type" "wiki") }}
-    {{ range $index, $page := $paginator.Pages.ByDate }}
-    {{ .Render "summary" }}
-    {{ end }}
-</div>
-{{ partial "pagination.html" $paginator }}
+	{{ if gt (len (where .Data.Pages "Type" "wiki")) 0 }}
+		{{ $paginator := .Paginate (where .Data.Pages "Type" "wiki") }}
+		<div class="archive-content">
+		    {{ range $index, $page := $paginator.Pages.ByDate }}
+		    {{ .Render "summary" }}
+		    {{ end }}
+		</div>
+		{{ partial "pagination.html" $paginator }}
+	{{ else }}
+		<div class="archive-content-empty">暂无数据</div>
+	{{ end }}
 {{ end }}

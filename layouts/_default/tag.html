@@ -1,11 +1,12 @@
 {{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
 
 {{ define "block-body" }}
+	<div class="archive-meta"><strong>标签</strong> {{ .Title }}</div>
 	{{ if gt (len (where .Data.Pages "Type" "archives")) 0 }}
 		<div class="archive-content">
 		    {{ $paginator := .Paginate (where .Data.Pages "Type" "archives") }}
 		    {{ range $index, $page := $paginator.Pages.ByPublishDate }}
-		    {{ .Render "summary" }}
+			    {{ .Render "summary" }}
 		    {{ end }}
 		</div>
 		{{ partial "pagination.html" $paginator }}
